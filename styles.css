@@ -1,0 +1,961 @@
+/* general (sitewide) */
+::selection { /*highlighting system */
+  color: white;
+  background: green;
+}
+/* back to top button */
+
+
+
+/* nav bar bkgd */
+.head {
+  text-align: center;
+  background-color: #fafafa;
+  font-size: 30px;
+  border-radius:0px;
+}
+
+.headcenter{
+  justify-content:center;
+}
+
+/* nav bar spacing */
+#home {
+  text-align:right;
+  width:20%;
+}
+
+#waste {
+  width:150px;
+  text-align:right;
+}
+
+#about {
+  width:150px;
+  text-align:right;
+}
+
+
+/* button interactivity */
+.butn {
+  border: solid green;
+  border-width: thin;
+  background-color: green;
+  color:white;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 20px;
+  text-align: center;
+  width:auto;
+  }
+.butn:hover {
+  background-color: inherit;
+  color: green;
+  }
+.bttn {
+  border: solid green;
+  border-width: thin;
+  background-color: inherit;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 20px;
+  text-align: center;
+  width:auto;
+  }
+.bttn:hover {
+  background: green;
+  color: white;
+  }
+.bttn:active{
+  background: green;
+  color:white;
+  }
+.logo{
+   border:none;
+   background-color: inherit;
+   margin-left: 50px;
+   vertical-align:middle;
+  }
+
+
+
+
+/* gallery */
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  /* this one actually does something v */
+  justify-content: center;
+  border-color:black;
+  border-radius:15px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  margin-left: -900px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 2195px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 1px 14px;
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  width: 50px;
+  height:50px;
+  border-radius:50%;
+  background-color:green;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 22px;
+  padding: 8px 9px;
+  position: relative;
+  top: 60px;
+  left: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dotdisplay {
+  padding:20px;
+}
+
+.dot {
+  position:relative;
+  top:-45px;
+  left:20px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.crop {
+  height: 400px;
+  width: 1000px;
+  overflow:hidden;
+  border-radius:15px;
+  border-color:black;
+  border-radius:15px;
+}
+
+.crop img{
+  height: auto;
+  width:1000px;
+  border-color:black;
+  border-radius:15px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 30px}
+}
+
+
+
+
+/* topic buttons */
+  .needbreak{
+    background-color:#f2f2f2;
+    width:100%;
+    display: inline-flex;
+    height:300px;
+    padding-left:10%;
+    justify-content:space-between;
+  }
+
+  .whytho {
+    background-color:black;
+    height:0px;
+  }
+  .imageCont1{
+    top:40px;
+    position:relative;
+    width:30%;
+    cursor:pointer;
+  }
+
+  .image1{
+    position: absolute;
+  }
+
+
+  .static:hover{
+    opacity:0;
+  }
+
+  #myButton {
+    height:50px;
+    width:260px;
+    background-color:black;
+    z-index:1;
+    margin-top: 7%;
+    border:0;
+    margin-left:2.25%;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    font-size:22px;
+    font-style:italic;
+    color: white;
+    text-align: left;
+  }
+
+  #myButton:hover{
+    opacity:80%;
+    background-color:green;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* QUOTE */
+  .testimonial-quote blockquote {
+      display:flex;
+      font-family: Georgia, 'Times New Roman', Times, serif, serif;
+      font-size: 1.5em;
+      font-style: italic;
+      position: relative;
+      justify-content:center;
+      left:200px;
+      width:900px;
+  }
+  .testimonial-quote blockquote p {
+      color: black;
+      line-height: 1.4 !important;
+      justify-content:center;
+      text-align:center;
+
+  }
+
+  .testimonial-quote blockquote p:first-child:before {
+      content: '\201C';
+      color: green;
+      font-size: 7.5em;
+      font-weight: 700;
+      opacity: .3;
+      position: relative;
+      text-shadow: none;
+  }
+
+  .testimonial-quote img {
+      position: relative;
+      left:1200px;
+      top:150px;
+  }
+
+  .testimonial-quote {
+      position: relative;
+  }
+
+  .testimonial-quote .quote-container {
+      position:relative;
+  }
+
+
+  .testimonial-quote.right img {
+    position:relative;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#survey{
+  display: none;
+}
+
+
+#gmap{
+  display: none;
+}
+
+
+
+
+#gwc{
+  height:120px;
+  background-color: #0d4369;
+  width:100%;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  font-family: Raleway;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.containe {
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    body {font-family: Raleway;}
+
+    #myImg {
+
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      }
+    #myImg:hover {opacity: 0.7;}
+
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+        .parallax{
+            filter: blur(4px);
+        }
+          
+        .caption{
+            position:relative;
+        }
+        
+    #probs {
+        line-height:40px;
+    }
+    a>#coap { display: none; }
+    a:hover>#coap { display: block; }
+
+    .benefits{
+        text-align: left;
+    }
+
+
+                #extra {
+          display: none;
+      }
+                button{
+         background-color: #4CAF50; /* Green */
+        border: none;
+        /* color: white; */
+        /* padding: 16px 32px; */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 4px 2px; */
+        /* -webkit-transition-duration: 0.4s; /* Safari */ */
+        transition-duration: 0.4s;
+        cursor: pointer;
+
+                }
+                .button1 {
+        background-color: white;
+font-family: raleway;
+        color: black;
+        border: 2px solid black;
+      }
+
+      .button1:hover {
+        background-color: #4CAF50;
+
+          border:2px solid white;
+        color: white;
+
+      }
+     .solution{
+
+         width: 320px;
+          border: 1px solid white;
+        padding:25px;
+        word-break: keep-all;
+
+                }
+    #add{
+        display: none;
+    }
+    .button2 {
+        background-color: white;
+font-family: raleway;
+        color: black;
+        border: 2px solid black;
+
+      }
+
+      .button2:hover {
+        background-color: #4CAF50;
+          border:2px solid white;
+        color: white;
+
+      }
+    .benefits{
+
+         width: 320px;
+      border: 1px solid white;
+        padding:15px;
+        word-break: keep-all;
+
+                }
+    #add3{
+        display: none;
+    }
+    .button3 {
+        background-color: white;
+        font-family: raleway;
+        color: black;
+        border: 2px solid black;
+
+      }
+
+      .button3:hover {
+        background-color: #4CAF50;
+          border:2px solid white;
+        color: white;
+
+      }
+     .involved{
+
+         width: 500px;
+      border: 1px solid white;
+        padding:15px;
+        word-break: keep-all;
+
+                }
+    #add4{
+        display: none;
+
+    }
+    .button4 {
+        background-color: white;
+        font-family: raleway;
+        color: black;
+        border: 2px solid black;
+
+      }
+
+      .button4:hover {
+        background-color: #4CAF50;
+          border:2px solid white;
+        color: white;
+
+      }
+
+   
+
+    .parallax {
+      filter: blur(8px);
+    }
+
+
+    #mydiv {
+      margin-top:80px;
+      text-align:center;
+      padding:40px;
+      border: 1px solid white;
+      font-size: 60px;
+      display:inline-block;
+      line-height: 30px;
+      z-index: 1;
+      position:relative;
+    }
+
+    h5{
+      filter:opacity(100%)
+    }
+    .foodimg{
+      margin-top:-330px;
+      filter: opacity(80%);
+    }
+
+    #packyobags {
+      position:relative;
+      width: 100%;
+    }
+
+    .row1 {
+      position:relative;
+      background-color: black;
+    }
+
+
+
+    .problem{
+      width:100%;
+    }
+
+    .proble{
+      width:100%;
+      height:650px;
+      background-color:lightseagreen;
+    }
+
+.contproblem{
+  position:relative;
+  left:22%;
+  top: 25px;
+}
+.imgproblem{
+  position:absolute;
+  padding:0;
+}
+
+.light{
+  height:50px;
+}
+
+
+    /* nav bar bkgd */
+.foot {
+  text-align: center;
+  width:100%;
+  background-color: #fafafa;
+  font-size: 30px;
+  border-radius:0px;
+  padding:2%;
+}
+
+
+
+
+
+
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
+ 
+ p {
+   line-height: 2rem;
+ }
+ 
+ .sidenav-trigger {
+   color: #26a69a;
+ }
+ 
+ .parallax-container {
+   line-height: 0;
+   height:1000px;
+   color: rgba(255,255,255,.9);
+ }
+ 
+ 
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+   height:300px;
+   background-color:black;
+ }
+ 
+.sticky {
+  margin:0;
+  position: fixed;
+  background-color:#fafafa;
+  z-index:10;
+}
+.content{
+  top:200px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.conten{
+  top:200px;
+}
+
+.sticky + .conten {
+  padding-top: 60px;
+}
+
+
+
+ .ppgirl{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor:pointer
+      }
+  .ppgirl:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+      }
+      body {
+    font-family: 'Raleway';font-size: 22px;
+      }
+      .iconbox {
+    height: 30%;
+    width:50%;
+    padding: 40px;
+
+      }
+      .iconbox > div {
+          text-align: center;
+          width: 50%;
+          justify-content:center;
+          vertical-align: top;
+          position:relative;
+
+
+      }
+      .iconbox p {
+          margin: 0;
+
+      }
+      #school{
+        vertical-align: middle;
+        font-size: 15px;
+
+      }
+      #name{
+          vertical-align: middle;
+        text-align:center;
+
+        font-size: 30px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* border-bottom: 2px solid black;
+        border-top: 2px solid black; */
+
+      }
+
+      #pic{
+         justify-content:center;
+      }
+      #school:hover + #pic{ 
+         display: block;
+      }
+
+      .abouthead{
+        margin-top:80px;
+      padding:40px;
+      border: 1px solid black;
+      font-size: 60px;
+      display:block;
+      line-height: 30px;
+      z-index: 1;
+      position:relative;
+      width:30%;
+      }
+
+      .meetus{
+        font-weight:normal;
+        position:relative;
+        font-size:30px;
+        align-items:center;
+        padding:10px;
+        top:20px;
+      }
+
+      #whowe{
+        text-align:center;
+      }
+.copyright{
+  font-family: raleway; 
+  font-size:12px;
+  color:black;
+}
+
+body {font-family: Raleway;}
+
+          #myImg {
+
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            }
+          #myImg:hover {opacity: 0.7;}
+
+
+          /* 100% Image Width on Smaller Screens */
+          @media only screen and (max-width: 700px){
+            .modal-content {
+              width: 100%;
+            }
+          }
+              .parallax{
+                  filter: blur(4px);
+              }
+                #mydiv
+              {
+                 border: 1px solid white;
+                  font-size:60px;
+                  margin-left: 150px;
+                  margin-right: 90px;
+                  margin-top: 90px;
+                  line-height: 50px;
+                  padding: 25px;
+
+
+              }
+              .caption{
+                  margin-right: 50px;
+              }
+              .problem{
+                  margin-left: 50px;
+                  margin-right: 50px;
+              }
+          #probs {
+              list-style:square;
+
+          }
+          a>#coap { display: none; }
+          a:hover>#coap { display: block; }
+
+          .benefits{
+              text-align: left;
+          }
+
+          .imp{
+
+                width: 250px;
+              border: 1px solid white;
+
+              padding:25px;
+              word-break: keep-all;
+                      }
+
+                      #extra {
+                display: none;
+            }
+                      button{
+               background-color: #4CAF50; /* Green */
+              border: none;
+              /* color: white; */
+              /* padding: 16px 32px; */
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              /* margin: 4px 2px; */
+              /* -webkit-transition-duration: 0.4s; /* Safari */ */
+              transition-duration: 0.4s;
+              cursor: pointer;
+
+                      }
+                      .button1 {
+              background-color: white;
+font-family: raleway;
+              color: black;
+              border: 2px solid black;
+            }
+
+            .button1:hover {
+              background-color: #4CAF50;
+
+                border:2px solid white;
+              color: white;
+
+            }
+           .solution{
+
+               width: 320px;
+                border: 1px solid white;
+              padding:25px;
+              word-break: keep-all;
+
+                      }
+          #add{
+              display: none;
+          }
+          .button2 {
+              background-color: white;
+font-family: raleway;
+              color: black;
+              border: 2px solid black;
+
+            }
+
+            .button2:hover {
+              background-color: #4CAF50;
+                border:2px solid white;
+              color: white;
+
+            }
+          .benefits{
+
+               width: 320px;
+            border: 1px solid white;
+              padding:15px;
+              word-break: keep-all;
+
+                      }
+          #add3{
+              display: none;
+          }
+          .button3 {
+              background-color: white;
+font-family: raleway;
+              color: black;
+              border: 2px solid black;
+
+            }
+
+            .button3:hover {
+              background-color: #4CAF50;
+                border:2px solid white;
+              color: white;
+
+            }
+           .involved{
+
+               width: 500px;
+            border: 1px solid white;
+              padding:15px;
+              word-break: keep-all;
+
+                      }
+          #add4{
+              display: none;
+
+          }
+          .button4 {
+              background-color: white;
+font-family: raleway;
+              color: black;
+              border: 2px solid black;
+
+            }
+
+            .button4:hover {
+              background-color: #4CAF50;
+                border:2px solid white;
+              color: white;
+
+            }
+
+          #metro:hover {opacity: 0.7;}

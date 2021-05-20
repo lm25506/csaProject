@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon" style = width: 100px>
+  <title>Mind Our Ground</title>
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+  <!-- nav bar, html css js -->
+  <div style="z-index: 7; width:100%; background-color:#fafafa">
+    <div class="head" style = "width:100%; background-color:#fafafa">
+    <div id=" navbar" style="display: inline-block;left:0;width:100%; text-align:center; top:0">
+      <div class="headcenter" style="display:flex">
+        <table id="navbar" style = "display:flex; width:100%; justify-content:center; top:0">
+          <tr>
+            <th> <button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png"
+                  style="width:250px;" /> </button> </th>
+            <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+            <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'recycling.html'"> recycling </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'transport.html'"> transport </button> </th>
+            <th id="about"><button class="butn" onclick="location.href = 'about.html'"> about </button> </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- sticky header -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+  <div class="content">
+    <center>
+      <div class = "abouthead" ><strong>ABOUT</strong> US </div>
+      <a class = "meetus">  Meet the Developers. </a>
+<div style = "height:3px;"></div>
+      <div class="iconbox" style = "display:flex;">
+          <div id="tut-icon">
+              <img class = "ppgirl" src="download.png" alt="cynthia" onclick="location.href = 'https://www.linkedin.com/in/cynthia-martinez-430240190'"/>
+              <br>
+              <p id="name">Cynthia Martinez</p>
+              <p id="school">Yes Prep East End </p>
+              <p id="page">[recycling plastics]</p>
+          </div>
+          <div id="vid-icon">
+              <img class = "ppgirl" src="images.png" alt="Macy"  onclick="location.href = 'https://www.linkedin.com/in/macy-huang-8021a4190'"/>
+              <p id="name">Macy Huang
+              <p id="school">Carnegie Vanguard High School</p>
+              <p id="page">[food waste] </p>
+            </p>
+          </div>
+          <div id="add-icon">
+              <img class = "ppgirl" src="download (1).png" alt="jamie" onclick="location.href = 'https://www.linkedin.com/in/jamie-le-16b820188/'">
+              <p id="name">Jamie Le</p>
+              <p id="school">George Bush High School</p>
+              <p id="page">[public transport]</p>
+          </div>
+      </div></center>
+      <br>
+
+      <center>
+<h3 id = "whowe"><strong>Who Are We?</strong></h3>
+<p>We are a group of student developers based in Houston who are passionate about the preservation and conservation of our environment.
+  This project was developed in our time in the Girls Who Code program.
+  We're so grateful to our instructors, Ronda Wiley and Manvi Saxena, for their help in developing our website.
+</p>
+
+
+<div>
+<div id = "gwc" onclick = "location.href= 'https://girlswhocode.com/'" style = "height:100px; cursor:pointer">
+<img src = "gwc.png" onclick = "location.href= 'https://girlswhocode.com/'" style = "height:100px; cursor:pointer">
+</div>
+</div>
+</div>
+</center>
+<br>
+
+<div style="z-index: 7; margin-top:100px">
+  <div class="foot">
+    <id="navbar" style="display: inline-block; ">
+      <table id="navbar">
+        <tr>
+
+          <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+          <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+          <th> <button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button>
+          </th>
+          <th> <button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button>
+          </th>
+
+          <th id="about"><button class="butn" onclick="location.href = 'about.html'"> about </button> </th>
+        </tr>
+      </table>
+
+      <a class = "copyright">© 2021 Copyright: Macy Huang, Jamie Le, Cynthia Martinez. See <div style = "display:inline; cursor:pointer;" onclick="location.href = 'https://docs.google.com/document/d/1R8NllietD9zgMn5RbRRBaDPXePEhWeysbHqd-3s2geI/edit?usp=sharing'">references.</div> </a>
+
+  </div>
+</div>
+</body>
+
+
+
+</html>

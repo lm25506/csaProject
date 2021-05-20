@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon" style="width: 100px">
+  <title> Mind Our Ground</title>
+</head>
+
+
+
+<body>
+  <!-- nav bar, html css js -->
+  <div style="z-index: 7; width:100%; background-color:#fafafa">
+    <div class="head" style = "width:100%; background-color:#fafafa">
+    <div id=" navbar" style="display: inline-block;left:0;width:100%; text-align:center; top:0">
+      <div class="headcenter" style="display:flex">
+        <table id="navbar" style = "display:flex; width:100%; justify-content:center; top:0">
+          <tr>
+            <th> <button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png"
+                  style="width:250px;" /> </button> </th>
+            <th id="home"> <button class="butn" onclick="location.href = 'index.html'"> home </button> </th>
+            <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'recycling.html'"> recycling </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'transport.html'"> transport </button> </th>
+            <th id="about"><button class="bttn" onclick="location.href = 'about.html'"> about </button> </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- sticky header -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+
+  <!-- gallery -->
+
+  <div class="content">
+    <div class="slideshow-container" style="margin: auto; height:400px;">
+      <ul>
+        <div class="mySlides fade">
+          <div class="numbertext"> 1/6 </div>
+          <li class="crop">
+            <img src="1.png" />
+          </li>
+          <div class="text"> our mission </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"> 2/6 </div>
+          <li class="crop">
+            <img src="2.jpg" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3/6</div>
+          <li class="crop">
+            <img src="3.jpg" />
+          </li>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4/6</div>
+          <li class="crop">
+            <img src="4.jpg" />
+          </li>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5/6</div>
+          <li class="crop">
+            <img src="5.jpg" />
+          </li>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6/6</div>
+          <li class="crop">
+            <img src="6.jpg" />
+          </li>
+        </div>
+      </ul>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div class="dotdisplay" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+
+
+
+
+<br>
+
+<!-- TOPIC BUTTONS -->
+<center>
+<div class="needbreak" z-index="1">
+  <div class="whytho">
+    <button id="myButton" onclick="location.href = 'waste.html'""><b>WASTE</b></button>
+      </div>
+      <a onclick=" location.href='waste.html'"></a>
+      <div class = " imageCont1">
+      <div class="image1">
+        <img src="food.png" alt="food waste" style="border-radius:30px">
+      </div>
+      <div class="image1">
+        <img class="static" src="food.gif" alt="food waste" style="border-radius:30px">
+      </div>
+  </div>
+  <div class="whytho">
+    <button id="myButton" onclick="location.href = 'recycling.html'"><b> RECYCLING</b></button>
+  </div>
+  <a href="recycling.html"></a>
+  <div class="imageCont1">
+    <div class=image1>
+      <img src="recycling.png" alt="food waste" href="recycling.html" style="border-radius:30px">
+    </div>
+    <div class="image1">
+      <img class="static" src="recycling.gif" alt="food waste" style="border-radius:30px">
+    </div>
+  </div>
+  <div class="whytho">
+    <button id="myButton" onclick="location.href = 'transport.html'"><b>TRANSPORT</b></button>
+  </div>
+  <a href="transport.html"> </a>
+  <div class="imageCont1">
+    <div class="image1">
+      <img src="bus.png" alt="food waste" style="width:260px;height:220px; border-radius:30px">
+    </div>
+    <div class="image1">
+      <img class="static" src="bus.gif" alt="food waste" style="width:260px;height:220px;border-radius:30px">
+    </div>
+  </div>
+</div>
+</center>
+
+</div>
+<!-- BLOCK QUOTE -->
+  <div class="testimonial-quote group" style = "top:0; position:relative;">
+    <div class = "imageCont1">
+      <div class="image1">
+        <img src="dal2.png" alt="food waste" style = "width:300px; height:auto;">
+      </div>
+      <div class="image1">
+        <img class="static" src="dal.png" alt="food waste" style = "width:300px; height:auto">
+      </div>
+
+    <div class="quote-container">
+      <blockquote>
+        <p>It is our collective and individual responsibility . . . to preserve and tend to the world in which we all
+          live.</p>
+      </blockquote>
+    </div>
+  </div>
+  <br>
+
+
+
+<div style="height:150px;width:100%; background-color:#fafafa"></div>
+
+</div>
+<br>
+
+
+<div style="z-index: 7; margin-top:100px">
+  <div class="foot">
+    <id="navbar" style="display: inline-block; ">
+      <table id="navbar">
+        <tr>
+
+          <th id="home"> <button class="butn" onclick="location.href = 'index.html'"> home </button> </th>
+          <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+          <th> <button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button> </th>
+          <th> <button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button> </th>
+
+          <th id="about"><button class="bttn" onclick="location.href = 'about.html'"> about </button> </th>
+      </table>
+
+      <a class = "copyright">© 2021 Copyright: Macy Huang, Jamie Le, Cynthia Martinez</a>
+
+  </div>
+</div>
+</body>
+
+</html>
